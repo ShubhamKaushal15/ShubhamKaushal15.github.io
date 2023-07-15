@@ -3,7 +3,7 @@ body {
     text-align: center;
     background-color: pink;
 
-    animation: gradientAnimation 5s linear infinite;
+    animation: gradientAnimation 4s linear infinite;
     background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493, #C71585);
     background-size: 400% 100%;
   }
