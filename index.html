@@ -2,80 +2,22 @@
 <html>
 <head>
   <title>Till Muskie & Shuboo Meet</title>
-  <style>
-    body {
-      font-family: "Tangerine", cursive;
-      text-align: center;
-      background-color: pink;
-    }
-    
-    h1 {
-      font-size: 48px;
-      margin-top: 100px;
-      text-align: center;
-    }
-
-    .heart {
-      color: red;
-      font-size: 24px;
-      animation: heartbeat 1s infinite;
-    }
-
-    @keyframes heartbeat {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+  <div id="heart">
+    <div id="left"></div>
+    <div id="right"></div>
+  </div>
+  
   <h1 id="countdown"></h1>
 
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("August 15, 2023 09:30:00 EST").getTime();
+  <div id="heart">
+    <div id="left"></div>
+    <div id="right"></div>
+  </div>
 
-    // Update the countdown every 1 second
-    var countdownTimer = setInterval(function() {
-
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the countdown date
-      var distance = countDownDate - now;
-
-      // Calculate days, hours, minutes, and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the countdown
-      document.getElementById("countdown").innerHTML = "<br /><br /><br /><br /><br /><br />" + 
-      days + " Days : " + 
-      hours + " Hours : " + 
-      minutes + " Minutes : " + 
-      seconds + " secs " + 
-      "<br /> till Muskie & Shuboo meet :) <br/> Iloveyou babygirl <3";
-    
-      // Change the background color to different shades of pink every second
-      var red = 255;
-      var green = 170 + Math.floor(Math.random() * 40);
-      var blue = 180 + Math.floor(Math.random() * 40);
-      document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
-
-      // If the countdown is finished, display a message
-      if (distance < 0) {
-        clearInterval(countdownTimer);
-        document.getElementById("countdown").innerHTML = "Countdown Finished";
-      }
-    }, 1000);
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+body {
+    font-family: "Tangerine", cursive;
+    text-align: center;
+    background-color: pink;
+  }
+  
+h1 {
+    font-size: 48px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+#heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10%; */
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+#right, #left {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(182, 0, 0);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#right {
+    position: relative;
+    left: -50px;
+    transform: rotate(-45deg);
+}
+
+#right::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: rgb(182, 0, 0);
+    position: absolute;
+    left: -105px;
+}
+
+#left {
+    
+    transform: rotate(-135deg);
+}
+
+#left::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color:  rgb(182, 0, 0);
+    position: absolute;
+    left: -105px;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(0.4);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
