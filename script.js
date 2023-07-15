@@ -36,3 +36,74 @@ var countdownTimer = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Countdown Finished";
   }
 }, 1000);
+
+// Array of love quotes
+var loveQuotes = [
+    "Distance means so little when someone means so much.",
+    "True love doesn't know the distance.",
+    "No matter how far, I carry your love with me.",
+    "Love knows no distance or time.",
+    "Even miles apart, our hearts are always together.",
+    "Distance is just a test to see how far love can travel.",
+    "In distance, we find the truest form of love.",
+    "Distance cannot stop what's meant to be.",
+    "With every mile, my love for you grows stronger.",
+    "Love transcends all boundaries, even distance.",
+    "Distance makes our love stronger and our bond unbreakable.",
+    "No matter the distance, we'll always find our way back to each other.",
+    "Distance may keep us apart, but love brings us closer.",
+    "The distance is temporary, but our love is permanent.",
+    "Distance means nothing when love means everything.",
+    "I may not be there, but my heart is always with you.",
+    "No matter how far apart, our souls are connected.",
+    "Love knows no limits, not even distance.",
+    "The miles between us only make our love stronger.",
+    "Distance is just a reminder of how strong our love can be.",
+    "When you're in my heart, we're never truly apart.",
+    "Distance is just a small obstacle compared to our love.",
+    "Our love is the bridge that spans any distance.",
+    "Distance is powerless against two hearts that truly belong together.",
+    "Love travels through space and time, crossing any distance.",
+    "The distance may be long, but our love makes it feel short.",
+    "Distance is the test of our love, and we will pass with flying colors.",
+    "I love you to the moon and back, no matter the distance.",
+    "Distance only makes our love burn brighter.",
+    "The distance cannot diminish the love we have for each other.",
+    "Our love is like the stars, always shining no matter the distance.",
+    "Distance is just a temporary separation for two souls destined to be together.",
+    "Love knows no boundaries, especially not distance.",
+    "The miles between us are nothing compared to the love within us.",
+    "No matter how far, I'll always be by your side.",
+    "The distance may be great, but our love is even greater.",
+    "Distance cannot erase the memories and love we share.",
+    "Every mile brings us closer to our ultimate destination: love.",
+    "Love crosses any distance and triumphs over any obstacle.",
+    "Distance is a reminder that our love is worth every sacrifice.",
+    "Our love is like a flame, burning fiercely regardless of the distance.",
+    "The distance between us is a reminder of how strong our love can be.",
+    "Nothing can keep us apart, not even the longest distance.",
+    "Distance is just a physical separation; our hearts are always connected.",
+    "Our love is like a magnet, drawing us closer no matter the distance.",
+    "No matter the distance, our love will always find a way.",
+    "The distance may be long, but our love is longer.",
+    "Our love knows no borders, transcending any distance.",
+    "Distance is just a chapter in our love story; our happy ending is certain.",
+    "Our love is a force that bridges any distance.",
+    "Distance is powerless against the love we have for each other.",
+    "The distance may be vast, but our love is infinite."
+  ];
+  
+
+  // Function to display a random love quote
+  function displayLoveQuote() {
+    var randomIndex = Math.floor(Math.random() * loveQuotes.length);
+    document.getElementById("quote-container").innerHTML = loveQuotes[randomIndex];
+  }
+
+  // Display initial love quote
+  displayLoveQuote();
+
+  // Update the love quote every 60 secs
+  setInterval(function() {
+    displayLoveQuote();
+  }, 60 * 1000); // 60 secs in milliseconds
