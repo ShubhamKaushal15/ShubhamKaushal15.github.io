@@ -24,12 +24,6 @@ var countdownTimer = setInterval(function() {
   seconds + " secs " + 
   "<br /> till Muskie & Shuboo meet :) <br/> Iloveyou babygirl <3";
 
-  // Change the background color to different shades of pink every second
-  var red = 255;
-  var green = 170 + Math.floor(Math.random() * 40);
-  var blue = 180 + Math.floor(Math.random() * 40);
-  document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
-
   // If the countdown is finished, display a message
   if (distance < 0) {
     clearInterval(countdownTimer);

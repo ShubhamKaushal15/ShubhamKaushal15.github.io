@@ -2,6 +2,10 @@ body {
     font-family: "Tangerine", cursive;
     text-align: center;
     background-color: pink;
+
+    animation: gradientAnimation 5s linear infinite;
+    background: linear-gradient(to right, #FFB6C1, #FF69B4, #FF1493, #C71585);
+    background-size: 400% 100%;
   }
   
 h1 {
@@ -59,18 +63,6 @@ h1 {
     left: -105px;
 }
 
-/* #heart1 {
-    animation-name: move1;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
-  
-#heart2 {
-    animation-name: move2;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  } */
-
 .quote {
     font-family: "Arvo", cursive;
     text-align: center;
@@ -90,18 +82,14 @@ h1 {
     }
 }
 
-/* @keyframes move1 {
-    0% { top: 50px; left: 50px; }
-    25% { top: 50px; left: calc(100% - 150px); }
-    50% { top: calc(100% - 150px); left: calc(100% - 150px); }
-    75% { top: calc(100% - 150px); left: 50px; }
-    100% { top: 50px; left: 50px; }
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  
-@keyframes move2 {
-    0% { top: calc(50% - 50px); left: calc(50% - 50px); }
-    25% { top: calc(50% - 50px); left: calc(100% - 150px); }
-    50% { top: calc(100% - 150px); left: calc(100% - 150px); }
-    75% { top: calc(100% - 150px); left: calc(50% - 50px); }
-    100% { top: calc(50% - 50px); left: calc(50% - 50px); }
-} */
