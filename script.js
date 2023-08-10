@@ -18,8 +18,8 @@ var countdownTimer = setInterval(function() {
 
   // Display the countdown
   document.getElementById("countdown").innerHTML =  
-  days + " Days : " + 
-  hours + " Hours : " + 
+  // days + " Days : " + 
+  (days * 24 + hours) + " Hours : " + 
   minutes + " Minutes : " + 
   seconds + " secs " + 
   "<br /> till Muskie & Shuboo meet :) <br/> Iloveyou babygirl <3";
